@@ -2,6 +2,8 @@
 
 require('patterns/creational/factory_method/factory_method.php');
 require('patterns/creational/abstract_factory/abstract_factory.php');
+require('patterns/creational/builder/builder.php');
+
 /*
 // Abstract Factory
 */
@@ -35,4 +37,24 @@ $Reactor = Factory\BnFactory::createReactor(800);
 $Reactor->getInfo();
 $Reactor->getHotEnergy();
 */
+
+/*
+// Builder
+*/
+
+// $builderPump = new Builder\PumpBuilder();
+// $builderPump->getInterface();
+// $builderPump->setName("A.H.Pump");
+// $builderPump->setFluid("Natrium");
+// $builderPump->setFlow(200);
+// $builderPump->setHead(70);
+// $builderPump->setType("Centrifugal");
+// $builderPump->setElectricalPower(500);
+// $builderPump->setPillowBlockBearingType("hydrostatic");
+// $builderPump->setThrustBearingType("hydrodinamic");
+// $builderPump->setClutchType("flexible");
+//
+// echo "<p>**********************************************************************</p>";
+// $pump = $builderPump->getPump();
+// $pump->getInfo();
 ?>
