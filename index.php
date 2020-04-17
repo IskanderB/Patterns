@@ -3,7 +3,7 @@
 require('patterns/creational/factory_method/factory_method.php');
 require('patterns/creational/abstract_factory/abstract_factory.php');
 require('patterns/creational/builder/builder.php');
-
+require('patterns/creational/prototype/prototype.php');
 /*
 // Abstract Factory
 */
@@ -57,4 +57,16 @@ $Reactor->getHotEnergy();
 // echo "<p>**********************************************************************</p>";
 // $pump = $builderPump->getPump();
 // $pump->getInfo();
+
+
+/*
+// Prototype
+*/
+
+// echo "<p style='font-weight: bold;'>Original object:";
+// $pump = new Prototype\Pump('A. H. Pump', 'Water', 600);
+// $pump->getInfo();
+// echo "<p style='font-weight: bold;'>Cloned object:";
+// $clone_pump = $pump->getClone();
+// $clone_pump->getInfo();
 ?>
