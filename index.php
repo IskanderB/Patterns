@@ -4,6 +4,7 @@ require('patterns/creational/factory_method/factory_method.php');
 require('patterns/creational/abstract_factory/abstract_factory.php');
 require('patterns/creational/builder/builder.php');
 require('patterns/creational/prototype/prototype.php');
+require('patterns/creational/singleton/singleton.php');
 /*
 // Abstract Factory
 */
@@ -69,4 +70,14 @@ $Reactor->getHotEnergy();
 // echo "<p style='font-weight: bold;'>Cloned object:";
 // $clone_pump = $pump->getClone();
 // $clone_pump->getInfo();
+
+/*
+// Singletone
+*/
+// use Singleton\Database;
+// $obj = Database::getObj('Hotel');
+// $obj->getName();
+//
+// $other = Database::getObj('Other');
+// $other->getName();
 ?>
