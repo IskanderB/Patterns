@@ -1,10 +1,21 @@
 <?php
 
-require('patterns/creational/factory_method/factory_method.php');
-require('patterns/creational/abstract_factory/abstract_factory.php');
-require('patterns/creational/builder/builder.php');
-require('patterns/creational/prototype/prototype.php');
-require('patterns/creational/singleton/singleton.php');
+/*
+// Structular patterns
+*/
+require('patterns/structular/adapter/adapter.php');
+
+/*
+// Creational patterns
+*/
+// require('patterns/creational/factory_method/factory_method.php');
+// require('patterns/creational/abstract_factory/abstract_factory.php');
+// require('patterns/creational/builder/builder.php');
+// require('patterns/creational/prototype/prototype.php');
+// require('patterns/creational/singleton/singleton.php');
+
+
+
 /*
 // Abstract Factory
 */
@@ -80,4 +91,14 @@ $Reactor->getHotEnergy();
 //
 // $other = Database::getObj('Other');
 // $other->getName();
+
+/*
+// Adapter
+*/
+
+$adapter = new Adapter();
+
+$adapter->tuning([72, 'km'], [2, 'h'], 'sm/s');
+$adapter->calc();
+$adapter->getResult();
 ?>
